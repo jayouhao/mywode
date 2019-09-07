@@ -1,0 +1,6 @@
+安装
+npm install uglify-js -g
+
+使用
+uglifyjs index.js -m -o index.min.js
+

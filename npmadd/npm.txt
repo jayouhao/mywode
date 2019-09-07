@@ -1,0 +1,11 @@
+在目录安装
+npm init
+
+设置镜像
+npm config set registry https://registry.npmjs.org/
+
+登录账号
+npm adduser
+
+推送
+npm publish
