@@ -1,42 +1,11 @@
 {
-  "_args": [
-    [
-      "lid-flexible@0.3.2",
-      "D:\\hao\\cloud"
-    ]
-  ],
-  "_from": "lid-flexible@0.3.2",
-  "_id": "lid-flexible@0.3.2",
-  "_inBundle": false,
-  "_integrity": "sha1-BvWnSDIxSi01wSA5vJw8otrqpCY=",
-  "_location": "/lid-flexible",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "lid-flexible@0.3.2",
-    "name": "lid-flexible",
-    "escapedName": "lid-flexible",
-    "rawSpec": "0.3.2",
-    "saveSpec": null,
-    "fetchSpec": "0.3.2"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/lid-flexible/-/lid-flexible-0.3.2.tgz",
-  "_spec": "0.3.2",
-  "_where": "D:\\hao\\cloud",
-  "author": "",
-  "description": "移动端适配解决方案",
-  "keywords": [
-    "适配"
-  ],
-  "license": "ISC",
-  "main": "flexible.js",
   "name": "lid-flexible",
+  "version": "1.0.0",
+  "description": "lid-flexible",
+  "main": "flexible.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.3.2"
+  "author": "",
+  "license": "ISC"
 }

