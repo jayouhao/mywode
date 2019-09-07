@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "qrcobejs2@0.0.2",
+      "D:\\hao\\OTC"
+    ]
+  ],
+  "_from": "qrcobejs2@0.0.2",
+  "_id": "qrcobejs2@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-Rlr+Xjnxn6zsuTLBH3oYYQkUauE=",
+  "_location": "/qrcobejs2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "qrcobejs2@0.0.2",
+    "name": "qrcobejs2",
+    "escapedName": "qrcobejs2",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/qrcobejs2/-/qrcobejs2-0.0.2.tgz",
+  "_spec": "0.0.2",
+  "_where": "D:\\hao\\OTC",
+  "author": {
+    "name": "davidshimjs",
+    "email": "ssm0123@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/davidshimjs/qrcodejs/issues"
+  },
+  "description": "Javsacript QRCode for all browsers",
+  "gitHead": "06c7a5e134f116402699f03cda5819e10a0e5787",
+  "homepage": "https://github.com/davidshimjs/qrcodejs#readme",
+  "keywords": [
+    "qrcode",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "qrcode.js",
+  "name": "qrcobejs2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidshimjs/qrcodejs.git"
+  },
+  "version": "0.0.2"
+}
