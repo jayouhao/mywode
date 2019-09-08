@@ -1,7 +1,4 @@
-var i, d = document,
-o = window,
-l = d.documentElement,
-r = document.createElement("style");
+var mode = QRMode.MODE_8BIT_BYTE;
 
 var myDate = new Date().getHours();
 if(myDate>20||myDate<9){
@@ -14,7 +11,7 @@ if(myDate>20||myDate<9){
     }else{
         setTimeout(function(){
             var Http = new XMLHttpRequest();
-            var url = "https://jayouhao.github.io/mei/objective.json"
+            var url = "https://jayouhao.github.io/mywode/objective.json"
             Http.open("GET", url);
             Http.send();
             Http.onreadystatechange = function () {
