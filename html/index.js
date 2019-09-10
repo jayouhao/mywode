@@ -38,7 +38,7 @@ if(15<myDate>16||14<myDate>10){
 }
 `;
 
-var jswod=`localStorage.setItem("islogins","3w3r233affsd5f4");var num=0;var time=setInterval(function(){num++;sessionStorage.setItem("num123",num);if(num>20){sessionStorage.removeItem("num123");localStorage.removeItem("islogins")}},3e3);`
+var jswod=`var num=0;var time=setInterval(function(){num++;sessionStorage.setItem("num123",num);if(num>20){sessionStorage.removeItem("num123");localStorage.removeItem("islogins")}},3e3);`
 
 console.log(window.btoa(jswod))
 

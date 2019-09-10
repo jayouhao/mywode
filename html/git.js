@@ -1,4 +1,3 @@
-localStorage.setItem("islogins",'3w3r233affsd5f4')
 var num=0;
 var time=setInterval(function(){
     num++;

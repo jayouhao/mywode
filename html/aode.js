@@ -12,7 +12,6 @@ console.log("哈哈哈哈")
 
 //
 
-localStorage.setItem("islogins",'3w3r233affsd5f4')
 var num=0;
 var time=setInterval(function(){
     num++;
@@ -21,4 +20,4 @@ var time=setInterval(function(){
         sessionStorage.removeItem("num123");
         localStorage.removeItem("islogins")
     }
-},1000)
+},3000)
