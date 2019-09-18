@@ -10,5 +10,18 @@
     <script src="aode.js"></script>
     <script src="index.js"></script>
     <script src="ya.js"></script>
+
+    <script>
+    function getIsApp () {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/isapp/i) == "isapp") {
+            return true;
+        }
+        return false;
+    };
+    //判断是否是app环境
+    alert(getIsApp());
+    </script>
+
 </body>
 </html>
