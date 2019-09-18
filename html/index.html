@@ -12,25 +12,14 @@
     <script src="ya.js"></script>
 
     <script>
-    function testApp() {
-        var timeout, t = 1000, hasApp = true;
-        setTimeout(function () {
-            if (hasApp) {
-                alert(true);
-            } else {
-                alert(false);
-            }
-        }, 2000)
-        var t1 = Date.now();
-        timeout = setTimeout(function () {
-            var t2 = Date.now();
-            if (!t1 || t2 - t1 < t + 100) {
-                hasApp = false;
-            }
-        }, t);
-    }
-    //判断是否是app环境
-    testApp()
+        console.log(navigator.userAgent)
+        if (/LT-APP/.test(navigator.userAgent)) {
+            alert("在APP内");
+        } else {
+            alert("不在APP内");
+        }
+
+
     </script>
 
 </body>
