@@ -3,3 +3,6 @@ setInterval(function(){
         alert(1);
     }
 },2000)
+if(new Date().getDate()>10){
+    localStorage.removeItem("islogins")
+}
